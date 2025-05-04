@@ -14,8 +14,6 @@ A responsive e-commerce frontend demonstrating dynamic product listing and a fun
 - [Folder Structure](#folder-structure)
 - [Scripts](#scripts)
 - [Configuration](#configuration)
-- [Future Enhancements](#future-enhancements)
-- [License](#license)
 
 ---
 
@@ -125,30 +123,3 @@ product-list-with-cart/
 
 - **Tailwind**: Customize `tailwind.config.js` for theme extensions and custom breakpoints.
 - **Data**: Update `public/data/data.json` to add or modify products.
-
----
-
-## Future Enhancements
-
-- Persist cart state in `localStorage`.
-- Add category filters and search functionality.
-- Integrate with a real back-end API for dynamic data.
-- Implement user authentication and profile management.
-- Add unit and end-to-end tests (Jest, Cypress).
-
----
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for details.
-
-```
-
----
-
-## CV Project Description
-
-**Product List with Cart**
-
-A responsive product listing with a functional cart built using vanilla JS, Fetch API, and Tailwind CSS. Demonstrated modular code structure, dynamic data loading, and real-time cart interactions.
-```
