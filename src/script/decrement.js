@@ -10,20 +10,19 @@ export function decrement(product) {
   let btn = product.querySelector(".product-btn.counter");
 
   let amount = btn.querySelector(".product-amount");
-
   let productImg = product.querySelector(".product-img");
-
   let productName = product.querySelector(".product-name").textContent;
   let productAmount = Number(amount.textContent);
-  let productPrice = Number(
-    product.querySelector(".product-price").textContent.match(/\d+(\.\d+)?/g)
-  );
-  let productTotal = productAmount * productPrice;
   let productId = product.dataset.id;
 
   if (amount.textContent >= 1) {
     --amount.textContent;
     --productAmount;
+
+    let productPrice = Number(
+      product.querySelector(".product-price").textContent.match(/\d+(\.\d+)?/g)
+    );
+    let productTotal = productAmount * productPrice;
 
     addProductToOrders(
       productName,
