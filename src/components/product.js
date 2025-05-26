@@ -62,7 +62,8 @@ export function productInfo(name, category, price) {
 export function createProduct({ image, name, category, price }) {
   let product = document.createElement("div");
   product.className = "product";
-  product.dataset.id = Date.now();
+  product.dataset.id =
+    Date.now().toString(36) + Math.random().toString(36).slice(2);
 
   product.innerHTML = `
   ${cartMediaAction(image, name, addToCartBtn())}
